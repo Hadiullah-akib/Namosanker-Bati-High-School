@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(
+    to top left,
+    hsl(160, 87%, 37%),
+    hsl(187, 76%, 35%)
+  );
+  /* background-color: hsl(187, 76%, 35%); */
+  color: white;
+}
+.container {
+  max-width: 1300px;
+  margin: 10px auto;
+  padding: 0 40px;
+}
+h1 {
+  margin: 10px auto;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  width: fit-content;
+}
+h2 {
+  font-size: clamp(1.5em, 2vw, 2rem);
+  margin: 17px auto;
+  width: fit-content;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100px; */
+}
+
+.sch-logo {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+.sch-logo img {
+  width: 80px;
+}
+.sch-logo-name {
+  margin-left: 1rem;
+}
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+.main-nav a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.2em;
+}
+
+.main-nav a:hover {
+  color: hsl(0, 0%, 75%);
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 35px;
+}
+
+.line {
+  width: 33px;
+  background: white;
+  height: 4px;
+  margin: 3px 3px;
+}
+
+.main {
+  height: 90vh;
+  background: url("../Images/Schgate.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+}
+
+.main::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.left p {
+  font-size: 1.4rem;
+}
+video {
+  border-radius: 50px;
+}
+.notice-board {
+  height: clamp(600px, 90vh, 850px);
+  margin-top: 40px;
+  background: url("../Images/offices.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+}
+.notice-board::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+.notice-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.notice-container {
+  width: 50%;
+  box-shadow: -3px 0 10px 2px black;
+}
+
+.marquee1 {
+  height: 80%;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+}
+.student-link {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 0 10px 2px black;
+}
+
+.link-style {
+  background: hsl(180, 80%, 45%);
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: block;
+  color: black;
+}
+.link-style:hover {
+  background: hsl(180, 70%, 40%);
+}
+
+.about-school {
+  margin-top: 40px;
+  background: url("../Images/land.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.about-school::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.about-school-holder {
+  display: flex;
+}
+
+.about-school-holder ul {
+  list-style: none;
+}
+.label {
+  font-weight: bold;
+  display: block;
+  margin: 10px;
+  font-size: 1.2em;
+}
+.basic-info {
+  width: 50%;
+  height: 100%;
+}
+.infrastructure-info {
+  width: 50%;
+  height: 100%;
+}
+.info-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-ul li {
+  width: 45%;
+  background: #158d9dab;
+  padding: 5px;
+  margin: 5px;
+  color: black;
+  box-shadow: 0 0 10px 2px black;
+}
+
+.about-teachers {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  background: url("../Images/teachers.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.about-teachers::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.teachers-container table {
+  width: 100%;
+}
+.teachers-container table,
+.teachers-container th,
+.teachers-container td {
+  border: 1px solid rgb(35, 93, 179);
+  border-collapse: collapse;
+}
+.teachers-container th,
+.teachers-container td {
+  padding: 15px;
+}
+.teachers-container tr:nth-child(even) {
+  background: hsl(194deg 80% 30% / 60%);
+}
+.teachers-container tr:nth-child(odd) {
+  background: hsl(187deg 76% 35% / 70%);
+}
+.teachers-container th {
+  background: #00ffff8c;
+}
+.results {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  background: url("../Images/result.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.results::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result table {
+  width: 100%;
+}
+.result table,
+.result th,
+.result td {
+  border: 1px solid rgb(35, 93, 179);
+  border-collapse: collapse;
+}
+.result th,
+.result td {
+  padding: 15px;
+}
+.result tr:nth-child(even) {
+  background: hsl(194deg 80% 30% / 60%);
+}
+.result tr:nth-child(odd) {
+  background: hsl(187deg 76% 35% / 70%);
+}
+.result th {
+  background: #00ffff8c;
+}
+.know-more {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.5em;
+}
+.know-more a {
+  text-decoration: none;
+  color: white;
+}
+.know-more a:hover {
+  color: #adadad;
+}
+.location {
+  margin-top: 50px;
+}
+
+.location iframe {
+  border-radius: 50px;
+}
+
+.word-wrapper p {
+  font-size: 1.2em;
+  margin: 10px;
+}
+.word {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  background: url("../Images/headMaster.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.word::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: -1;
+}
+.signature {
+  margin-top: 15px;
+}
+.signature span {
+  display: block;
+}
+footer {
+  height: 100px;
+  background: #0c200d;
+  font-size: 1.3em;
+}
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+footer img {
+  width: 100px;
+}

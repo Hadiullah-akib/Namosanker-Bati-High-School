@@ -1,0 +1,127 @@
+@media only screen and (max-width: 950px) {
+  .main-header {
+    /* height: 75px; */
+    flex-direction: column;
+  }
+  .sch-logo {
+    margin: auto;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+  .burger {
+    display: block;
+  }
+  .v-class-resp {
+    display: none;
+  }
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .notice-board {
+    height: 120vh;
+  }
+  .notice-wrapper {
+    flex-direction: column;
+  }
+  .notice-container {
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 0 10px 2px black;
+  }
+  .student-link {
+    width: 100%;
+    height: 50%;
+  }
+  .about-school-holder {
+    flex-direction: column;
+  }
+  .basic-info {
+    width: 100%;
+    height: 50%;
+  }
+  .infrastructure-info {
+    width: 100%;
+    height: 50%;
+  }
+  .label {
+    font-size: 1rem;
+  }
+  footer {
+    height: 150px;
+    font-size: 1.2em;
+  }
+  footer p {
+    flex-direction: column;
+  }
+  footer img {
+    width: 80px;
+  }
+  footer span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    padding: 15px;
+  }
+  .link-style {
+    padding: 5px;
+    margin: 3px;
+    font-size: 1rem;
+  }
+  .burger {
+    top: 55px;
+  }
+  .result th,
+  .result td {
+    padding: 5px;
+  }
+  .label {
+    font-weight: bold;
+    display: block;
+    margin: 0px;
+    font-size: 1em;
+  }
+  .info-ul li {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+  }
+  .word-wrapper p {
+    font-size: 1em;
+    margin-top: 15px;
+  }
+  footer {
+    height: 170px;
+    font-size: 1em;
+  }
+  thead {
+    display: none;
+  }
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+  tr {
+    margin-bottom: 15px;
+  }
+  tbody tr td {
+    text-align: right;
+    height: 50px;
+    position: relative;
+  }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    text-align: left;
+  }
+}
