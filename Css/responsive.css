@@ -3,6 +3,9 @@
     /* height: 75px; */
     flex-direction: column;
   }
+  .h-class-resp {
+    height: 500px;
+  }
   .sch-logo {
     margin: auto;
   }
